@@ -31,7 +31,5 @@
     <xsl:template match="xs:instance/xs:ports/xs:port[@type='https']/text()">9443</xsl:template>
     <xsl:template match="xs:instance/xs:ports/xs:port[@type='nhttp']/text()">8280</xsl:template>
     <xsl:template match="xs:instance/xs:ports/xs:port[@type='nhttps']/text()">8243</xsl:template>
-    <xsl:template match="xs:instance[@name='backend-server']/xs:ports/xs:port[@type='http']/text()">9763</xsl:template>
-    <xsl:template match="xs:instance[@name='backend-server']/xs:ports/xs:port[@type='https']/text()">9443</xsl:template>
 
 </xsl:stylesheet>

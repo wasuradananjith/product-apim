@@ -160,9 +160,9 @@ public class LoadBalancedEndPointTestCase extends APIMIntegrationBaseTest {
         String tags = "LB";
         String description = "LoadBalancedEnd-point";
 
-        firstProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP1_WEB_APP_NAME;
-        secondProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP2_WEB_APP_NAME;
-        thirdProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP3_WEB_APP_NAME;
+        firstProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP1_WEB_APP_NAME;
+        secondProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP2_WEB_APP_NAME;
+        thirdProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP3_WEB_APP_NAME;
 
         ArrayList<String> endpointLB = new ArrayList<String>();
         endpointLB.add(firstProductionEndPoint);
@@ -260,9 +260,9 @@ public class LoadBalancedEndPointTestCase extends APIMIntegrationBaseTest {
         String descriptionSandbox = "SandboxEnd-point";
         String tagsSandbox = "sandbox";
 
-        firstProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP1_WEB_APP_NAME;
-        secondProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP2_WEB_APP_NAME;
-        thirdProductionEndPoint = backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP3_WEB_APP_NAME;
+        firstProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP1_WEB_APP_NAME;
+        secondProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP2_WEB_APP_NAME;
+        thirdProductionEndPoint = gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.PRODEP3_WEB_APP_NAME;
 
         //Add production endpoints
         List<String> endpointProd = new ArrayList<String>();
@@ -272,11 +272,11 @@ public class LoadBalancedEndPointTestCase extends APIMIntegrationBaseTest {
 
         //add sandbox endpoints
         String firstSandboxEndpoint =
-                backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP1_WEB_APP_NAME;
+                gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP1_WEB_APP_NAME;
         String secondSandboxEndpoint =
-                backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP2_WEB_APP_NAME;
+                gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP2_WEB_APP_NAME;
         String thirdSandboxEndpoint =
-                backEndServerUrl.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP3_WEB_APP_NAME;
+                gatewayUrlsWrk.getWebAppURLHttp() + APIMIntegrationConstants.SANDBOXEP3_WEB_APP_NAME;
 
         List<String> endpointSandbox = new ArrayList<String>();
         endpointSandbox.add(firstSandboxEndpoint);
